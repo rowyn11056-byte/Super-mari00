@@ -31,13 +31,15 @@ python -m http.server --directory docs 8000
 
 ---
 
-If you want, I can:
+The playable demo has been moved into `docs/index.html` and is now a working, lightweight playable demo.
 
-- move the current HTML into `docs/index.html` and finish the missing script pieces so the demo is playable, or
-- add a small automated test that checks the build and reports Pages status.
+To preview locally, run:
 
-Which would you prefer?
-<title>Super Mario Remix</title>
+```bash
+python -m http.server --directory docs 8000
+```
+
+Open http://localhost:8000 to try the demo. The README no longer contains the full game HTML (it's been moved to `docs/index.html`).
 <style>
 body{margin:0;background:#5c94fc;overflow:hidden;}
 canvas{width:360px;height:640px;image-rendering:pixelated;display:block;margin:auto;}
